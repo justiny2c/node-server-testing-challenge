@@ -3,8 +3,8 @@ const request = require('supertest'); // << install this as -D
 const server = require('./server.js'); // << the System Under Test (SUT)
 
 describe("server", () => {
-    it("db environment is set to testingOne", () => {
-        expect(process.env.DB_ENV).toBe("testingOne")
+    it("db environment is set to testing", () => {
+        expect(process.env.DB_ENV).toBe("testing")
     })
 
     describe("GET /", () => {
